@@ -1,0 +1,16 @@
+let a = [2,2,3,4,56,6,6]
+//filter 
+// function removeduplicate(a){
+//   return a.filter((item,index)=> a.indexOf(item)==index);
+// }
+// console.log(removeduplicate(a))
+//reduce
+function removeduplicate(a){
+  let newarr = a.reduce(function(acc,curr){
+    if(!acc.includes(curr))
+      acc.push(curr);
+    return acc;
+  })
+  return newarr;
+}, []);
+console.log(removeduplicate(a));
