@@ -1,0 +1,11 @@
+let arr = [5, 67, 26, 10, 416];
+
+//Getting min value
+let minValue = arr.reduce((acc, curr) => Math.min(acc, curr));
+
+//Getting max value
+let maxValue = arr.reduce((acc, current) => Math.max(acc, current));
+
+//Display output
+console.log("Minimum element is:" + minValue);
+console.log("Minimum element is:" + maxValue);
