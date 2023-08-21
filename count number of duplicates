@@ -1,0 +1,3 @@
+const myArray = ['a', 'b', 'c', 'c', 'b', 'd'];
+var mycount = myArray.reduce((count, item) => (count[item] = count[item] + 1 || 1, count), {});
+console.log(mycount);
